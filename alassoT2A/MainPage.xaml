@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="alassoT2A.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Entry x:Name="txtNombre" Placeholder="Nombre del Estudiante" />
+            <DatePicker x:Name="datePicker" />
+
+            <Entry x:Name="txtSeguimiento1" Placeholder="Nota Seguimiento 1 (0-10)" Keyboard="Numeric" />
+            <Entry x:Name="txtExamen1" Placeholder="Examen 1 (0-10)" Keyboard="Numeric" />
+
+            <Entry x:Name="txtSeguimiento2" Placeholder="Nota Seguimiento 2 (0-10)" Keyboard="Numeric" />
+            <Entry x:Name="txtExamen2" Placeholder="Examen 2 (0-10)" Keyboard="Numeric" />
+
+            <Button Text="Calcular Notas" Clicked="OnCalcularNotasClicked" />
+
+            <Label x:Name="lblResultado" Text="Resultados" FontSize="Medium" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
