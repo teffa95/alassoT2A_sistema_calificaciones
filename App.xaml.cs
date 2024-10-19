@@ -1,6 +1,5 @@
-﻿using alassoT2A.Views;
-
-
+﻿namespace alassoT2A
+{
     public partial class App : Application
     {
         public App()
@@ -10,4 +9,4 @@
             MainPage = new NavigationPage(new LoginPage());
         }
     }
-
+}
